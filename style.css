@@ -1,0 +1,21 @@
+h1 {
+	font-size: 100px;
+	color: #d3d3d3;
+	background-color: aliceblue;
+	padding: 20px;
+	margin: 20px;
+
+}
+
+#menurow {
+	display: inline-block;
+	height: 30px
+	width: 100%;
+	background-color: #d3d3d3
+}
+
+a {
+	margin: 30px
+	padding: 2px
+	color: black;
+}

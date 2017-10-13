@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Destinations</title>
+	<title>Contact us</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,31 +28,29 @@
 
 
 <div align="center" class="picture">
-<img src="http://www.ef.vu.lt/dokumentai/nuotraukos/English-page/News/study-abroad-header-new.jpg">
+<img src="https://www.griffith.edu.au/__data/assets/image/0008/925190/contact-icon_ask-us.png">
 </div>
 
+<section id="contact">
+  
+<div class="container">
 
-<div class="Destinations">
-	<h1>New Destinations</h1>
-	<p> Now you can do your exchange program in Europe too. <br> Select one of the countries bellow and contact us for more information</p>
-</div>
+<form name="htmlform" method="post" action="toyousender.php">
 
-
-<div align="center" class="cities">
-<table>
-   <tr>
-     <td>Ireland</td>
-     <td>England</td>
-     <td>France</td>
-  </tr>
-  <tr>
-    <td>Sweden</td>
-    <td>Portugal</td>
-    <td>Italy</td>
-  </tr>
-  </table>
-</div>
-
+<input type="text" name="first_name" placeholder="NAME" required>
+  
+<input  type="email" name="email" placeholder="MAIL" required>
+  
+<textarea name="comments" placeholder="MESSAGE" required ></textarea>
+  
+<button name="send" type="submit" class="submit">SEND</button>
+  
+</form>
+ 
+  </div>
+  </section>
+  
+    <script  src="js/index.js"></script>
 	
 </body>
 

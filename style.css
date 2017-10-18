@@ -1,0 +1,228 @@
+body {
+	font-family: Arial, Helvetica, sans serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+
+/* Global */
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{ 
+	margin: 0;
+	padding: 0;
+ }
+
+.button_1{
+	height: 38px;
+	background: #e8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff
+}
+
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+/* Header **/
+header {
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header ul {
+	margin:0;
+	padding: 0;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding-top: 0;
+	padding-right: 20px;
+	padding-bottom: 0;
+	padding-left: 20px;
+
+}
+
+header #branding img{
+	float: left;
+	width: 170px;
+    height: 50px;
+    padding-bottom: 10px;
+	
+
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .current a{
+	color: #e8491d;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+/* Showcase */
+
+#showcase{
+	min-height: 400px;
+	background: url('../img/home_showcase1.jpeg') no-repeat; 
+	background-size: 1800px 700px;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+#showcase_destinations{
+	min-height: 400px;
+	background: url('../img/destinations.jpg') no-repeat; 
+	background-size: 2000px 500px;
+	font-size: 35px;
+	text-align: center;
+	color: #e8491d;
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px; 
+}
+
+#showcase p{
+	font-size: 20px;
+}
+
+/* Newsletter */ 
+
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background-color: #35424a;
+}
+
+
+#newsletter h1{
+	float: left;
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 20px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+/* Boxes */ 
+
+#why{
+	text-align: center;
+	font-size: 40px;
+	padding-top: 20px;
+
+}
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxes .box img{
+	width: 150px;
+}
+
+/*Sidedar*/
+
+aside#sidebar{
+	float: right;
+	width: 40%;
+	margin-top: 10px;
+}
+
+
+aside#sidebar .quote input{
+	width: 90%;
+	height: 25px;
+	padding: 5px;
+}
+
+aside#sidebar .quote input#message{
+	width: 90%;
+	height: 150px;
+	padding: 5px;
+}
+
+
+
+/* Main-col */
+
+article#main-col{
+	float:left;
+	width: 55%;
+}
+
+
+
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
+
+
+/*
+
+<div>
+				<h1 class="page-title">What people say about us</h1>
+				<p>"The work of RealizeCanada was essential in order to get the acceptance letter from the Red River College. He took all of our questions and were very attentive at all times we need. I recommend everyone! Thank you." <br>Raul Barros Osasco / SP</p>
+
+				</div>
+
+
+
+
+

@@ -99,7 +99,7 @@ header a:hover{
 
 #showcase{
 	min-height: 400px;
-	background: url('../img/home_showcase1.jpeg') no-repeat; 
+	background: url('./home_showcase1.jpeg') no-repeat; 
 	background-size: 1800px 700px;
 	text-align: center;
 	color: #ffffff;
@@ -108,7 +108,7 @@ header a:hover{
 
 #showcase_destinations{
 	min-height: 400px;
-	background: url('../img/destinations.jpg') no-repeat; 
+	background: url('./destinations.jpg') no-repeat; 
 	background-size: 2000px 500px;
 	font-size: 35px;
 	text-align: center;

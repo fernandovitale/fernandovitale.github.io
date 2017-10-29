@@ -8,6 +8,89 @@
 	<meta name="author" content="Fernando Vitale">
 	<title>Destinations</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+
+
+
+<script>
+function _(x){
+    return document.getElementById(x);
+}
+
+
+function loadContent(btn){
+
+	var europe = ['England','France','Ireland','Italy','Portugal'];
+	var asia = ['Australia', 'Japan', 'New Zeland'];
+	var northamerica = ['Canada','Mexico','United States'];
+	var southamerica = ['Argentina','Chile','Paraguay'];
+
+
+	
+	_("btn_marker").style.left = btn.offsetLeft+"px";
+	console.log(btn.innerHTML)
+	_("btn_marker").style.width = btn.offsetWidth-2+"px";
+	_("mycontent").innerHTML = "Content for "+btn.innerHTML+" loaded";
+
+	if (btn.innerHTML === "Europe") {
+		_("mycontent").innerHTML = '<ul id="europe-list">';
+
+		for (var i = 0; i < europe.length; i++) {
+			console.log(europe[i]);
+			_("europe-list").innerHTML += '<li>'+europe[i]+'</li>';
+		}
+
+		_("mycontent").innerHTML += '<ul id="europe-list">'
+
+	} 
+
+	if (btn.innerHTML === "Asia") {
+		_("mycontent").innerHTML = '<ul id="asia-list">';
+
+		for (var i = 0; i < asia.length; i++) {
+			console.log(asia[i]);
+			_("asia-list").innerHTML += '<li>'+asia[i]+'</li>';
+		}
+
+		_("mycontent").innerHTML += '<ul id="asia-list">'
+
+	}
+
+
+	if (btn.innerHTML === "North America") {
+		_("mycontent").innerHTML = '<ul id="northamerica-list">';
+
+		for (var i = 0; i < northamerica.length; i++) {
+			console.log(northamerica[i]);
+			_("northamerica-list").innerHTML += '<li>'+northamerica[i]+'</li>';
+		}
+
+		_("mycontent").innerHTML += '<ul id="northamerica-list">'
+
+	}
+
+
+	if (btn.innerHTML === "South America") {
+		_("mycontent").innerHTML = '<ul id="southamerica-list">';
+
+		for (var i = 0; i < southamerica.length; i++) {
+			console.log(southamerica[i]);
+			_("southamerica-list").innerHTML += '<li>'+southamerica[i]+'</li>';
+		}
+
+		_("mycontent").innerHTML += '<ul id="southamerica-list">'
+
+	}
+}
+	
+window.addEventListener('load', function(event) { initMenu(); });
+</script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+
 </head>
 <body>
 	<header>
@@ -26,15 +109,13 @@
 		</div>
 	</header>
 
-
-<section id="showcase_destinations">
+	<section id="showcase_destinations">
 		<div class="container">
 			<h1>New destinations</h1>
-			
 		</div>
-</section>
+	</section>
 
-<section id="newsletter">
+	<section id="newsletter">
 		<div class="container">
 			<h1>Subscribe to our newsletter</h1>
 			<form>
@@ -44,12 +125,44 @@
 		</div>
 	</section>
 
+	<div class='left-side'>
+		<h1>Click to check our destinations</h1>
+		
+	  	
+	  	<div id="btn_marker"></div>
 
+	  	<div id="mymenu">
+	  		<button id="btn1" onclick="loadContent(this)">North America</button>
+	  		<button id="btn2" onclick="loadContent(this)">South America</button>
+	  		<button id="btn3" onclick="loadContent(this)">Europe</button>
+	  		<button id="btn4" onclick="loadContent(this)">Asia</button>
+		</div>
+
+		<div id="mycontent">Click to check the destinations</div>
+
+
+		<button type="button" onclick="myFunction()">Click Me!</button>
+
+		<script>
+	    function myFunction() {
+	        alert("My First JavaScript");
+	    }
+		</script>
+	</div>
 	
 
-	<footer>
-		<p>Realize International Education, Fernando Vitale, CopyRight 2017</p>
-	</footer>
+	<div class="wrapper">
+      <h1>Brazilian expats over time</h1>
+      <h2>Number of brazilians living outside of Brazil</h2>
+      <canvas id="myChart" width="250" height="125"></canvas>
+    </div>
+
+    <script src="./script.js"></script>
+
+
+
+	
+	
 
 
 </body>

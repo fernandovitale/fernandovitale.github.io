@@ -202,27 +202,64 @@ article#main-col{
 	width: 55%;
 }
 
+.left-side {
+	float: left;
+	width: 45%;
+	
+}
 
 
-
-footer{
+footer {
 	padding: 20px;
 	margin-top: 20px;
 	color: #ffffff;
 	background-color: #e8491d;
 	text-align: center;
+
 }
 
-
-/*
-
-<div>
-				<h1 class="page-title">What people say about us</h1>
-				<p>"The work of RealizeCanada was essential in order to get the acceptance letter from the Red River College. He took all of our questions and were very attentive at all times we need. I recommend everyone! Thank you." <br>Raul Barros Osasco / SP</p>
-
-				</div>
+.wrapper {
+  width: 50%;
+  float: right;
+  padding-right: 20px;
+  padding-left: 0px;
 
 
+  
+}
 
+.wrapper h1{
+	font-size: 25px;
+	font-style: arial;
+	color: #35424a;
 
+}
+
+.wrapper h2{
+	font-size: 15px;
+	font-style: arial;
+	color: #35424a;
+
+}
+
+#mycontent{ 
+	font-size:18px; 
+	border: gray 1px solid; 
+	width:437px; 
+	height:250px; 
+	padding:20px; 
+	background:#DFEFFF;
+	color: #35424a;
+	float: center;
+	
+}
+
+#mymenu > button{ 
+	padding: 10px 30px;
+	background: #e8491d;
+	border: 0;
+	color: #ffffff; 
+	float: center;
+	
+}
 
